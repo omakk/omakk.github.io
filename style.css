@@ -1,0 +1,43 @@
+html {
+  background: url(mtl.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  width: 75%;
+  background-color: inherit;
+}
+
+#pic {
+  padding-top: 25px;
+}
+
+#name {
+  color: #DADEA7;
+  font-family: 'Trochut', cursive;
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+#navbar {
+  color: #DADEA7;
+  font-size: 18px;
+}
+
+.nav-item {
+  color: #DADEA7;
+  font-family: 'Trochut', cursive;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
