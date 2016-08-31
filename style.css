@@ -1,20 +1,26 @@
 html {
   background: url(mtl.jpg) no-repeat center center fixed;
+  background-color: #0F1A30;
+  background-blend-mode: hard-light;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  back
 }
 
 body {
   width: 75%;
-  background-color: inherit;
+  background: transparent;
+  text-decoration-color: #EACAC4
 }
-
+h1 {
+  font-size: 62px;
+}
 p {
   color: #EACAC4;
   font-family: 'Roboto', sans-serif;
-  font-size: bold;
+  font-size: 19px;
 }
 
 #pic {
@@ -24,8 +30,7 @@ p {
 #name {
   color: #EACAC4; /*#DADEA7;*/
   font-family: 'Trochut', cursive;
-  font-size: 42px;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 #navbar {
