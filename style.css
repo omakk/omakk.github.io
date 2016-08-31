@@ -11,6 +11,12 @@ body {
   background-color: inherit;
 }
 
+p {
+  color: #EACAC4;
+  font-family: 'Roboto', sans-serif;
+  font-size: bold;
+}
+
 #pic {
   padding-top: 25px;
 }
@@ -29,7 +35,6 @@ body {
 
 .nav-item {
   color: #EACAC4;
-  font-family: 'Trochut', cursive;
 }
 
 hr {
@@ -38,5 +43,5 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
+  padding: 0 10%;
 }

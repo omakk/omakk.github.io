@@ -18,6 +18,7 @@
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Trochut:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   </head>
   <body class="container">
     <div class="row" id="header">
@@ -31,18 +32,88 @@
     <div class="row" id="navbar">
       <ul class="text-center list-unstyled list-inline">
         <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInLeft one">
-          <a href="#" class="nav-item" role="button"><span class="glyphicon glyphicon-user"></span></a>
+          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-user" id="about-btn"></span></a>
         </li>
         <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-          <a href="#" class="nav-item" role="button"><span class="glyphicon glyphicon-book"></span></a>
+          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-book" id="blog-btn"></span></a>
         </li>
         <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-          <a href="#" class="nav-item" role="button"><span class="glyphicon glyphicon-education"></span></a>
+          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-education" id="resume-btn"></span></a>
         </li>
         <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInRight one">
-          <a href="#" class="nav-item" role="button"><span class="glyphicon glyphicon-console"></span></a>
+          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-console" id="projects-btn"></span></a>
         </li>
       </ul>
     </div>
+    <div class="container col-xs-12 animate fadeIn two" >
+      <hr/>
+      <div id="main_content">
+        <div class="active animate fadeInRight one" id="about">
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut euismod lacus. Vestibulum cursus turpis feugiat libero tristique, vitae lobortis elit laoreet. Pellentesque eu efficitur velit, in pretium nibh. Quisque vitae arcu ut dui euismod auctor vel a mi. Mauris nec augue in neque porttitor pretium. Pellentesque et lectus non nisl blandit pellentesque vel euismod libero. Sed risus mauris, commodo a libero non, sollicitudin vehicula urna. Suspendisse ut sem nisi. Aenean dapibus massa id velit iaculis, eu luctus ex rutrum. Fusce sit amet felis sit amet augue elementum pulvinar.
+          </p>
+        </div>
+        <div class= "animate one" id="blog" style="display: none;">
+          <p class="text-center">
+            Donec blandit urna id est bibendum, eu ornare massa condimentum. Mauris congue orci dictum, rhoncus nisl a, imperdiet nibh. Suspendisse mauris nibh, ultricies vel commodo tempor, condimentum sit amet diam. Integer et magna pulvinar, ultrices ante eu, pharetra nunc. Sed dapibus pretium nunc, id vulputate augue ultrices non. Proin ultricies, metus eu fringilla convallis, erat mi elementum nulla, at feugiat mi tellus at nulla. Vivamus non turpis pretium, rutrum metus at, consectetur neque. Pellentesque cursus finibus rutrum. Maecenas dapibus ac velit quis viverra. In feugiat sodales tortor, ut porttitor sapien dictum aliquam. Mauris eu nibh erat. Donec cursus, erat pulvinar congue vulputate, quam tellus suscipit nisl, non bibendum erat metus euismod nisl.
+          </p>
+        </div>
+        <div class= "animate one" id="resume" style="display: none;">
+          <p class="text-center">
+            Sed bibendum enim sit amet magna sollicitudin eleifend. Suspendisse rhoncus, arcu in gravida porttitor, leo velit aliquet magna, et elementum tellus leo ut est. Etiam et orci in nibh tristique dapibus. Nulla eget pellentesque magna. Sed lobortis augue vitae erat mattis, vitae hendrerit sem mollis. Aenean vehicula lectus quis aliquet eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus hendrerit orci sed finibus. Suspendisse et nibh a lacus eleifend volutpat laoreet sagittis erat. Fusce at nisl facilisis, efficitur est non, blandit est. Nulla ornare, leo a hendrerit malesuada, nibh nunc elementum tortor, in pharetra justo mi ut dolor. Nulla at mauris vitae est blandit tempus. Sed condimentum tortor nisi, eu pretium erat mattis nec. Morbi lobortis purus at mi rutrum, ut egestas dui hendrerit.
+          </p>
+        </div>
+        <div class= "animate one" id="projects" style="display: none;">
+          <p class="text-center">
+            In auctor, dui sed aliquet aliquet, tellus lectus feugiat tortor, vitae convallis sapien neque varius felis. Donec sit amet lorem nec purus commodo mollis at sed odio. Aliquam erat volutpat. Suspendisse in tortor diam. Praesent vitae justo dignissim, scelerisque tellus eget, laoreet sem. Nunc congue augue libero, ut sagittis mi fermentum cursus. Sed molestie varius pretium. Praesent hendrerit urna et risus gravida faucibus. Proin ornare dictum commodo. Cras bibendum tristique enim, ac tempor eros laoreet in.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    var btn = $(".nav-icon");
+    btn.click(function (e) {
+      var active_content = $(".active");
+      var active_content_id = active_content.attr('id');
+      var id = e.target.id;
+      switch (id) {
+        case 'about-btn':
+          if(active_content_id != 'about') {
+            var about = $("#about");
+            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
+            about.addClass('active fadeInRight');
+            about.css('display', 'block')
+          }
+          break;
+        case 'blog-btn':
+          if(active_content_id != 'blog') {
+            var blog = $("#blog");
+            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
+            blog.addClass('active fadeInRight');
+            blog.css('display', 'block');
+          }
+          break;
+        case 'resume-btn':
+          if(active_content_id != 'resume') {
+            var resume = $("#resume");
+            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
+            resume.addClass('active fadeInRight');
+            resume.css('display', 'block');
+          }
+          break;
+        case 'projects-btn':
+          if(active_content_id != 'projects') {
+            var projects = $("#projects");
+            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
+            projects.addClass('active fadeInRight');
+            projects.css('display', 'block');
+          }
+          break;
+        default:
+          console.log("Something went wrong");
+          break;
+      }
+    })
+    </script>
   </body>
 </html>
