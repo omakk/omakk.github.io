@@ -97,7 +97,7 @@
             </div>
           </div>
           <h2 class="text-center"><u>PROJECTS</u></h2>
-          <a href='javascript:$("#projects-btn").click()' role="button">
+          <a href='#' role="button" id="project-link">
             <p class="text-center">Over here!</p>
           </a>
           <h2 class="text-center"><u>WORK EXPERIENCE</u></h2>
@@ -122,6 +122,11 @@
       </div>
     </div>
     <script type="text/javascript">
+    $("#project-link").click(function (e) {
+      $("#resume").removeClass('active fadeIn fadeInUp').css('display', 'none');
+      $("#projects").addClass('active fadeInUp').css('display', 'block');
+    })
+
     $(".nav-icon").click(function (e) {
       var active_content = $(".active");
       var active_content_id = active_content.attr('id');
@@ -133,7 +138,7 @@
 
       if (active_content_id != id) {
         var elm = $('#' + id);
-        active_content.removeClass('active fadeIn fadeInUp').addClass('fadeOutDown').css('display', 'none');
+        active_content.removeClass('active fadeIn fadeInUp').css('display', 'none');
         elm.addClass('active fadeInUp').css('display', 'block');
       }
     });
