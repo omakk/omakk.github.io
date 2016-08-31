@@ -71,47 +71,20 @@
       </div>
     </div>
     <script type="text/javascript">
-    var btn = $(".nav-icon");
-    btn.click(function (e) {
+    $(".nav-icon").click(function (e) {
       var active_content = $(".active");
       var active_content_id = active_content.attr('id');
-      var id = e.target.id;
-      switch (id) {
-        case 'about-btn':
-          if(active_content_id != 'about') {
-            var about = $("#about");
-            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
-            about.addClass('active fadeInRight');
-            about.css('display', 'block')
-          }
-          break;
-        case 'blog-btn':
-          if(active_content_id != 'blog') {
-            var blog = $("#blog");
-            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
-            blog.addClass('active fadeInRight');
-            blog.css('display', 'block');
-          }
-          break;
-        case 'resume-btn':
-          if(active_content_id != 'resume') {
-            var resume = $("#resume");
-            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
-            resume.addClass('active fadeInRight');
-            resume.css('display', 'block');
-          }
-          break;
-        case 'projects-btn':
-          if(active_content_id != 'projects') {
-            var projects = $("#projects");
-            active_content.removeClass('active fadeInRight').addClass('fadeOutLeft').css('display', 'none');
-            projects.addClass('active fadeInRight');
-            projects.css('display', 'block');
-          }
-          break;
-        default:
-          console.log("Something went wrong");
-          break;
+
+      // id will end with '-btn' and so we splice it out of the string
+      // so that it can be equivalent to the ids of the content divs
+      // removing the need for a switch-case statement.
+      var id = e.target.id.slice(0,-4);
+
+      if (active_content_id != id) {
+        var elm = $('#' + id);
+        active_content.removeClass('active fadeInRight').addClass('fadeOutDown').css('display', 'none');
+        elm.addClass('active fadeInUp');
+        elm.css('display', 'block')
       }
     })
     </script>
