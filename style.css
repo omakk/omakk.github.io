@@ -1,5 +1,5 @@
 html {
-  background: url(mtl.jpg) no-repeat center center fixed;
+  background: url(imgs/mtl.jpg) no-repeat center center fixed;
   background-color: #0F1A30;
   background-blend-mode: hard-light;
   -webkit-background-size: cover;
@@ -15,32 +15,24 @@ body {
   overflow: scroll;
   text-decoration-color: #EACAC4
 }
-h1 {
-  font-size: 5vw;
+
+h1, h2, h3, h4, h5, h6 {
+  color: #EACAC4; /*#DADEA7;*/
+  font-family: 'Trochut', cursive;
 }
-p {
+p, .content-list {
   color: #EACAC4;
   font-family: 'Roboto', sans-serif;
   font-size: 2vh;
 }
 
-#pic {
-  padding-top: 25px;
+
+p > span {
+  float: right;
 }
 
-#name {
-  color: #EACAC4; /*#DADEA7;*/
-  font-family: 'Trochut', cursive;
-  font-weight: bold;
-}
-
-#navbar {
-  font-size: 18px;
-  padding: 10px 20% 5px;
-}
-
-.nav-item {
-  color: #EACAC4;
+a {
+  text-decoration: none !important;
 }
 
 hr {
@@ -51,3 +43,43 @@ hr {
   margin: 1em 0;
   padding: 0 10%;
 }
+
+#pic {padding-top: 25px;}
+
+#name {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+#navbar {
+  font-size: 18px;
+  padding: 10px 20% 5px;
+}
+
+#linkedin {
+  bottom: 0;
+  left: 60px;
+  right: 0;
+  position: absolute;
+}
+
+#ghlogo   {
+  bottom: 0;
+  left: 0;
+  right: 30px;
+  position: absolute;
+  width: 50px;
+}
+
+#links {
+  height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.content-list-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-item {color: #EACAC4;}

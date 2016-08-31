@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <title>Omar Akkila</title>
+
     <!-- Ensures proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Support for French characters -->
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
     <!-- Bootstrap latest compiled and minified CSS -->
@@ -18,6 +22,8 @@
     <!-- Bootstrap latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script src="script.js"></script>
+
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Trochut:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -25,7 +31,7 @@
   <body class="container">
     <div class="row" id="header">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown two" id="pic">
-        <img src="pp.jpeg" width="100" height="100" class="img-responsive center-block img-circle" alt="Me">
+        <img src="imgs/pp.jpeg" width="100" height="100" class="img-responsive center-block img-circle" alt="Me">
       </div>
       <div class= "text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown one" id="name">
         <h1>Omar Akkila</h1>
@@ -51,42 +57,24 @@
       <hr/>
       <div id="main_content">
         <div class="active animate fadeIn one" id="about">
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut euismod lacus. Vestibulum cursus turpis feugiat libero tristique, vitae lobortis elit laoreet. Pellentesque eu efficitur velit, in pretium nibh. Quisque vitae arcu ut dui euismod auctor vel a mi. Mauris nec augue in neque porttitor pretium. Pellentesque et lectus non nisl blandit pellentesque vel euismod libero. Sed risus mauris, commodo a libero non, sollicitudin vehicula urna. Suspendisse ut sem nisi. Aenean dapibus massa id velit iaculis, eu luctus ex rutrum. Fusce sit amet felis sit amet augue elementum pulvinar.
-          </p>
+          <div class="row" id="links">
+            <a class="center-block" id="ghlogo" href="https://github.com/omakk">
+              <img src="imgs/GitHub-Mark-Light-32px.png" alt="Github">
+            </a>
+            <a id="linkedin" href="#">
+              <img class="center-block" src="imgs/In-White-34px-TM.png" alt="LinkedIn">
+            </a>
+          </div>
         </div>
         <div class= "animate one" id="blog" style="display: none;">
           <p class="text-center">COMING SOON!</p>
           <p class="text-center">À VENIR BIENTÔT!</p>
         </div>
         <div class= "animate one" id="resume" style="display: none;">
-          <p class="text-center">
-            Sed bibendum enim sit amet magna sollicitudin eleifend. Suspendisse rhoncus, arcu in gravida porttitor, leo velit aliquet magna, et elementum tellus leo ut est. Etiam et orci in nibh tristique dapibus. Nulla eget pellentesque magna. Sed lobortis augue vitae erat mattis, vitae hendrerit sem mollis. Aenean vehicula lectus quis aliquet eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus hendrerit orci sed finibus. Suspendisse et nibh a lacus eleifend volutpat laoreet sagittis erat. Fusce at nisl facilisis, efficitur est non, blandit est. Nulla ornare, leo a hendrerit malesuada, nibh nunc elementum tortor, in pharetra justo mi ut dolor. Nulla at mauris vitae est blandit tempus. Sed condimentum tortor nisi, eu pretium erat mattis nec. Morbi lobortis purus at mi rutrum, ut egestas dui hendrerit.
-          </p>
         </div>
         <div class= "animate one" id="projects" style="display: none;">
-          <p class="text-center">
-            In auctor, dui sed aliquet aliquet, tellus lectus feugiat tortor, vitae convallis sapien neque varius felis. Donec sit amet lorem nec purus commodo mollis at sed odio. Aliquam erat volutpat. Suspendisse in tortor diam. Praesent vitae justo dignissim, scelerisque tellus eget, laoreet sem. Nunc congue augue libero, ut sagittis mi fermentum cursus. Sed molestie varius pretium. Praesent hendrerit urna et risus gravida faucibus. Proin ornare dictum commodo. Cras bibendum tristique enim, ac tempor eros laoreet in.
-          </p>
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-    $(".nav-icon").click(function (e) {
-      var active_content = $(".active");
-      var active_content_id = active_content.attr('id');
-
-      // id will end with '-btn' and so we splice it out of the string
-      // so that it can be equivalent to the ids of the content divs
-      // removing the need for a switch-case statement.
-      var id = e.target.id.slice(0,-4);
-
-      if (active_content_id != id) {
-        var elm = $('#' + id);
-        active_content.removeClass('active fadeIn fadeInUp').addClass('fadeOutDown').css('display', 'none');
-        elm.addClass('active fadeInUp').css('display', 'block');
-      }
-    })
-    </script>
   </body>
 </html>
