@@ -75,14 +75,18 @@ hr {
 .lang-l {float: left;}
 .lang-r {float: right;}
 
+.logo-row {
+  text-align: center;
+}
+
 .logo-img {
   display: inline-block;
   padding: 5px 5px;
   vertical-align: middle;
 }
 
-.logo-row {
-  text-align: center;
+.logo-img > img {
+  height: 27px;
 }
 
 .nav-item {color: #EACAC4;}
