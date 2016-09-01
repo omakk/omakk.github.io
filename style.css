@@ -20,10 +20,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #EACAC4; /*#DADEA7;*/
   font-family: 'Trochut', cursive;
 }
-p, .content-list {
+p, p > a, .content-list {
   color: #EACAC4;
   font-family: 'Roboto', sans-serif;
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
 
@@ -44,7 +44,9 @@ hr {
   padding: 0 10%;
 }
 
-#pic {padding-top: 25px;}
+#langs {
+  border-right: thin solid white;
+}
 
 #name {
   font-size: 4vw;
@@ -56,30 +58,31 @@ hr {
   padding: 10px 20% 5px;
 }
 
-#linkedin {
-  bottom: 0;
-  left: 60px;
-  right: 0;
-  position: absolute;
+#pic {padding-top: 25px;}
+
+#skills {
+  padding-bottom: 10px;
 }
 
-#ghlogo   {
-  bottom: 0;
-  left: 0;
-  right: 30px;
-  position: absolute;
-  width: 50px;
-}
-
-#links {
-  height: 30px;
-  margin-bottom: 10px;
-  position: relative;
-}
+.content-list {padding: 0 60px;}
 
 .content-list-item {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 2vw;
+}
+
+.lang-l {float: left;}
+.lang-r {float: right;}
+
+.logo-img {
+  display: inline-block;
+  padding: 5px 5px;
+  vertical-align: middle;
+}
+
+.logo-row {
+  text-align: center;
 }
 
 .nav-item {color: #EACAC4;}
