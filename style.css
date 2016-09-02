@@ -44,9 +44,9 @@ hr {
   padding: 0 10%;
 }
 
-#langs {
-  border-right: thin solid white;
-}
+#langs {border-right: thin solid white;}
+@media (max-width: 767px) {#langs{border: none;}}
+
 
 #name {
   font-size: 4vw;
