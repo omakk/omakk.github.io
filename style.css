@@ -23,9 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 p, p > a, .content-list {
   color: #EACAC4;
   font-family: 'Roboto', sans-serif;
-  font-size: 2vh;
+  font-size: 2vmax;
 }
-
 
 p > span {
   float: right;
@@ -49,7 +48,7 @@ hr {
 
 
 #name {
-  font-size: 4vw;
+  font-size: 4vmin;
   font-weight: bold;
 }
 
@@ -69,7 +68,7 @@ hr {
 .content-list-item {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 2vh;
+  font-size: 2vmax;
 }
 
 .lang-l {float: left;}
