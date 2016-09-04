@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 p, p > a, .content-list {
   color: #FFFFF0;
   font-family: 'Roboto', sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 p > span {float: right;}
@@ -48,8 +48,6 @@ hr {
 #pic {padding-top: 25px;}
 
 #skills {padding-bottom: 10px;}
-
-.content-list {font-size: 2vw;}
 
 .content-list-item {
   padding: 10px 60px;
