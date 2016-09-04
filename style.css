@@ -10,10 +10,8 @@ html {
 }
 
 body {
-  width: 75%;
   background: transparent;
   overflow: scroll;
-  text-decoration-color: #FFFFF0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,18 +19,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Trochut', cursive;
 }
 p, p > a, .content-list {
-  color: #EACAC4;
+  color: #FFFFF0;
   font-family: 'Roboto', sans-serif;
-  font-size: 2vmax;
+  font-size: 2vw;
 }
 
-p > span {
-  float: right;
-}
+p > span {float: right;}
 
-a {
-  text-decoration: none !important;
-}
+a {text-decoration: none !important;}
 
 hr {
   display: block;
@@ -46,12 +40,6 @@ hr {
 #langs {border-right: thin solid white;}
 @media (max-width: 767px) {#langs{border: none;}}
 
-
-#name {
-  font-size: 4vmin;
-  font-weight: bold;
-}
-
 #navbar {
   font-size: 18px;
   padding: 10px 20% 5px;
@@ -61,16 +49,12 @@ hr {
 
 #skills {padding-bottom: 10px;}
 
-.content-list {padding: 0 60px;}
+.content-list {font-size: 2vw;}
 
 .content-list-item {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 2vmax;
+  padding: 10px 60px;
+  width: inherit;
 }
-
-.lang-l {float: left;}
-.lang-r {float: right;}
 
 .logo-row {text-align: center;}
 
