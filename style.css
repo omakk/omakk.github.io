@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 p, p > a, .content-list {
   color: #FFFFF0;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 p > span {float: right;}
