@@ -54,6 +54,12 @@ hr {
   width: inherit;
 }
 
+.glyphicon-envelope {
+  color: white;
+  font-size: 27px;
+}
+.glyphicon-envelope:hover, .glyphicon-envelope:focus, .glyphicon-envelope:active {color: white;}
+
 .logo-row {text-align: center;}
 
 .logo-img {
@@ -62,9 +68,7 @@ hr {
   vertical-align: middle;
 }
 
-.logo-img > img {
-  height: 27px;
-}
+.logo-img > img {height: 30px;}
 
 .nav-item {color: #FFFFF0;}
 .nav-item:hover, .nav-item:focus, .nav-item:active {color: #FA0C19;}
