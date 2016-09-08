@@ -71,7 +71,7 @@ hr {
 .logo-img > img {height: 30px;}
 
 .nav-item {color: #FFFFF0;}
-.nav-item:hover, .nav-item:focus, .nav-item:active {color: #FA0C19;}
+.nav-item:hover, .nav-item:focus, .nav-item:active, a:hover, a:focus, a:active {color: #FA0C19;}
 
 .project-list-header {padding-bottom: 5px;}
 
