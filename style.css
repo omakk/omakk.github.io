@@ -57,6 +57,7 @@ hr {
 .glyphicon-envelope {
   color: white;
   font-size: 27px;
+  top: 2px;
 }
 .glyphicon-envelope:hover, .glyphicon-envelope:focus, .glyphicon-envelope:active {color: white;}
 
@@ -64,11 +65,11 @@ hr {
 
 .logo-img {
   display: inline-block;
-  padding: 5px 5px;
+  padding: 5px 15px;
   vertical-align: middle;
 }
 
-.logo-img > img {height: 30px;}
+.logo-img > img {height: 28px;}
 
 .nav-item {color: #FFFFF0;}
 .nav-item:hover, .nav-item:focus, .nav-item:active, a:hover, a:focus, a:active {color: #FA0C19;}
@@ -79,9 +80,15 @@ hr {
   bottom: 0;
   display: inline;
   margin-bottom: 0;
-  padding-right: 10px;
   vertical-align: bottom;
 }
 
-.project-list-header-img {display:inline;}
-.project-list-header-img > img {vertical-align: baseline; !important;}
+.project-list-header-img {
+  display:inline;
+  padding: 5px 5px;
+}
+
+.project-list-header-img > img {
+  height: 20px;
+  vertical-align: baseline; !important;
+}
