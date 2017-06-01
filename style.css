@@ -1,26 +1,26 @@
+@media (min-width: 900px) {.container {width: 800px !important;}}
+
 html {
-  background: url(imgs/photo.jpg) no-repeat center center fixed;
-  background-color: slateblue;
-  background-blend-mode: hard-light;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-size: 75%;
 }
 
 body {
-  background: transparent;
   overflow: scroll;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FFFFF0;
+h1, h2, h3 {
+  color: black;
   font-family: 'Trochut', cursive;
 }
+
+h4, h5, h6 {
+  color: black;
+  font-family: 'Roboto', cursive;
+}
+
 p, p > a, .content-list {
-  color: #FFFFF0;
-  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
 }
 
@@ -37,8 +37,7 @@ hr {
   padding: 0 10%;
 }
 
-#langs {border-right: thin solid white;}
-@media (max-width: 767px) {#langs{border: none;}}
+.img-circle {border-radius: 20%;}
 
 #navbar {
   font-size: 18px;
@@ -55,11 +54,11 @@ hr {
 }
 
 .glyphicon-envelope {
-  color: white;
+  color: black;
   font-size: 27px;
   top: 2px;
 }
-.glyphicon-envelope:hover, .glyphicon-envelope:focus, .glyphicon-envelope:active {color: white;}
+.glyphicon-envelope:hover, .glyphicon-envelope:focus, .glyphicon-envelope:active {color: #FA0C19;}
 
 .logo-row {text-align: center;}
 
@@ -71,7 +70,7 @@ hr {
 
 .logo-img > img {height: 28px;}
 
-.nav-item {color: #FFFFF0;}
+.nav-item {color: black;}
 .nav-item:hover, .nav-item:focus, .nav-item:active, a:hover, a:focus, a:active {color: #FA0C19;}
 
 .project-list-header {padding-bottom: 5px;}
