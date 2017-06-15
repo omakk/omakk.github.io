@@ -56,6 +56,8 @@ hr {
   width: inherit;
 }
 
+.content-list-item > p { color: #777; }
+
 .glyphicon-envelope {
   color: black;
   font-size: 27px;
@@ -94,6 +96,9 @@ hr {
   height: 20px;
   vertical-align: baseline; !important;
 }
+
+.black-text { color: black !important; }
+.gray-text  { color: #777  !important; }
 
 .post-item {
   display: block;
