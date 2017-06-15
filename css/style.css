@@ -1,7 +1,7 @@
 @media (min-width: 900px) {.container {width: 800px !important;}}
 
 html {
-  font-size: 67%;
+  font-size: 68%;
 }
 
 body {
@@ -90,4 +90,23 @@ hr {
 .project-list-header-img > img {
   height: 20px;
   vertical-align: baseline; !important;
+}
+
+.post-item {
+  display: block;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+#post-date {
+  color: #777;
+  font-size: smaller;
+}
+
+#post-link {
+  width: inherit;
+}
+
+#post-summary {
+  padding: 0px 75px;
 }

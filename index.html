@@ -1,216 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+---
+layout: home
+title: Home
+---
 
-    <title>Omar Akkila</title>
-
-    <!-- Ensures proper rendering and touch zooming -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <!-- Support for French characters -->
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-    <!-- Bootstrap latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="animation.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Bootstrap latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Trochut:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  </head>
-  <body class="container">
-    <div class="row" id="header">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown two" id="pic">
-        <img src="imgs/moi.jpeg" width="150" height="150" class="img-responsive center-block img-circle" alt="Me"/>
-      </div>
-      <div class= "text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown one">
-        <h1 id="name">Omar Akkila</h1>
+<div class="row" id="header">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown two" id="pic">
+    <img src="imgs/moi.jpeg" width="150" height="150" class="img-responsive center-block img-circle" alt="Me"/>
+  </div>
+  <div class= "text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 animate fadeInDown one">
+          <h1 id="name">{{ site.author }}</h1>
+  </div>
+</div>
+<div class="row" id="navbar">
+  <ul class="text-center list-unstyled list-inline">
+    <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInLeft one">
+      <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-user" id="about-btn"></span></a>
+    </li>
+    <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
+      <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-education" id="resume-btn"></span></a>
+    </li>
+    <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
+      <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-console" id="projects-btn"></span></a>
+    </li>
+    <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInRight one">
+      <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-pencil" id="blog-btn"></span></a>
+    </li>
+  </ul>
+</div>
+<div class="container col-xs-12 animate fadeIn two" >
+  <hr/>
+  <div id="main_content">
+    <div class="text-center active animate fadeIn one" id="about">
+      <p>Bonjour! Hi!</p>
+      <p>I am a Software Engineering graduate from McGill University currently seeking an opportunity to work on large, interesting applications to expand my learning and develop exciting new features amongst a highly-motivated team. My portfolio of projects has seen me develop a diverse set of programs ranging from robotics to web apps to compilers! (Click the console icon to check some of them out)
+      </p>
+      <p>Some of my technical interests include programming languages, big data, parallelism/concurrency, and systems architecture. Finding ways to accomplish tasks faster without sacrificing simplicity and reliability is what I like to do. In addition, I am an ardent supporter of knowledge sharing and enjoy teaching technical concepts to my peers.
+      </p>
+      <p> When not playing with ones and zeroes I like to discover new music, purchase every piece of Star Wars merchandise, play soccer or squash, spend days modifying my .vimrc, and look at cat photos. Feel free to contact me and send some cat gifs!
+      </p>
+      <p>J'aimerais aussi utiliser cet espace comme un occasion de pratiquer mon mauvais français</p>
+      <div class="row logo-row clearfix">
+        <a class="logo-img" href="http://github.com/omakk">
+          <img src="imgs/GitHub-Mark-32px.png" alt="Github">
+        </a>
+        <a class="logo-img" href="http://www.linkedin.com/in/omar-akkila">
+          <img class="center-block" src="imgs/In-Black-21px-R.png" alt="LinkedIn">
+        </a>
+        <a class="logo-img" href="mailto:omakkila@gmail.com">
+          <span class="glyphicon glyphicon-envelope"></span>
+        </a>
       </div>
     </div>
-    <div class="row" id="navbar">
-      <ul class="text-center list-unstyled list-inline">
-        <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInLeft one">
-          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-user" id="about-btn"></span></a>
+    <div class= "animate one" id="resume" style="display: none;">
+      <p class="text-center"><a href="assets/CV_OMAR_2017.pdf"><u>View PDF version</u></a></p>
+      <h2 class="text-center"><u>EDUCATION</u></h2>
+      <p class="text-center"><strong>McGill University, Montréal, QC, Canada</strong></p>
+      <p class="text-center"><i>September 2011 - May 2017</i></p>
+      <p class="text-center">Bachelor of Software Engineering</p>
+      <h2 class="text-center" id="skills"><u>TECHNICAL SKILLS</u></h2>
+      <div class="row">
+        <div class=" col-md-12 col-sm-12 col-xs-12 text-center">
+          <!-- Section: LANGS -->
+          <h3>PROGRAMMING LANGUAGES</h3>
+          <ul class="list-unstyled list-inline content-list">
+            <li class="content-list-item">Java</li>
+            <li class="content-list-item">Python</li>
+            <li class="content-list-item">C</li>
+            <li class="content-list-item">Javascript</li>
+            <li class="content-list-item">OCaml</li>
+            <li class="content-list-item">Bash</li>
+          </ul>
+          <!-- End Section -->
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <!-- Section: FRMTOOLS -->
+          <h3 class="text-center">FRAMEWORKS AND TOOLS</h3>
+          <ul class="list-unstyled list-inline content-list">
+            <li class="content-list-item">Git</li>
+            <li class="content-list-item">Unix/Linux</li>
+            <li class="content-list-item">HTML</li>
+            <li class="content-list-item">CSS</li>
+            <li class="content-list-item">jQuery</li>
+            <li class="content-list-item">Boostrap</li>
+            <li class="content-list-item">Django</li>
+            <li class="content-list-item">SQL</li>
+          </ul>
+          <!-- End Section -->
+        </div>
+      </div>
+      <h2 class="text-center"><u>PROJECTS</u></h2>
+      <a href='#' role="button" id="project-link">
+        <p class="text-center">Over here!</p>
+      </a>
+      <h2 class="text-center"><u>WORK EXPERIENCE</u></h2>
+      <ul class="text-center list-unstyled content-list">
+        <li class="content-list-item">
+          <h4><strong>Computer Science Undergraduate Society (CSUS) Help Desk Tutor</strong></h4>
+          <p><i>Sept 2016 - April 2017</i></p>
+          <p>Recipient of Tomlinson Engagement Award for Mentoring (TEAM) in recognition of services</p>
+          <p>Assisted students with coursework and delivered mock interviews for upper-year students</p>
         </li>
-        <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-education" id="resume-btn"></span></a>
-        </li>
-        <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-console" id="projects-btn"></span></a>
-        </li>
-        <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInRight one">
-          <a href="#" class="nav-item"><span class="nav-icon glyphicon glyphicon-pencil" id="blog-btn"></span></a>
+        <li class="content-list-item">
+          <h4><strong>Personal Tutor</strong></h4>
+          <p><i>Nov 2014 - April 2017</i></p>
+          <p>Tutored students one-on-one in the following subjects: MATH 141 (Calculus 2), COMP 202 (Foundations of Programming), COMP 206 (Introduction to Software Systems), and COMP 310 (Operating Systems)</p>
         </li>
       </ul>
     </div>
-    <div class="container col-xs-12 animate fadeIn two" >
-      <hr/>
-      <div id="main_content">
-        <div class="text-center active animate fadeIn one" id="about">
-          <p>Bonjour! Hi!</p>
-          <p>I am a Software Engineering graduate from McGill University currently seeking an opportunity to work on large, interesting applications to expand my learning and develop exciting new features amongst a highly-motivated team. My portfolio of projects have seen me develop a diverse set of programs ranging from robotics to web apps to compilers! (Click the console icon to check some of them out)
-          </p>
-          <p>Some of my technical interests include programming languages, big data, parallelism/concurrency, and systems architecture. Finding ways to accomplish tasks faster without sacrificing simplicity and reliability is what I like to do. In addition, I am an ardent supporter of knowledge sharing and enjoy teaching technical concepts to my peers.
-          </p>
-          <p> When not playing with ones and zeroes I like to discover new music, purchase every piece of Star Wars merchandise, play soccer or squash, spend days modifying my .vimrc, and look at cat photos. Feel free to contact me and send some cat gifs!
-          </p>
-          <p>J'aimerais aussi utiliser cet espace comme un occasion de pratiquer mon mauvais français</p>
-          <div class="row logo-row clearfix">
-            <a class="logo-img" href="http://github.com/omakk">
+    <div class= "animate one" id="projects" style="display: none;">
+      <ul class="text-center list-unstyled content-list">
+        <li class="content-list-item">
+          <div class="project-list-header">
+            <h4 class="project-list-header-text"><strong>Soccer-Playing Autonomous Robot</strong></h4>
+            <a class="project-list-header-img" href="https://github.com/nabilchowdhury/SoccerBot">
               <img src="imgs/GitHub-Mark-32px.png" alt="Github">
             </a>
-            <a class="logo-img" href="http://www.linkedin.com/in/omar-akkila">
-              <img class="center-block" src="imgs/In-Black-21px-R.png" alt="LinkedIn">
+        </div>
+          <p><i>First place in design competition</i></p>
+          <p>Lead software designer; functional capablilities include localization, navigation, obstacle avoidance, odometry, ball-loading mechanism, and launching mechanism</p>
+          <p>Constructed with the Lego Mindstorms EV3 Controller with Lego-based sensors and pieces</p>
+          <p>Multithreaded Java program utilizing the LeJOS EV3 API</p>
+        </li>
+        <li class="content-list-item">
+          <div class="project-list-header">
+            <h4 class="project-list-header-text"><strong>Minilang Compiler</strong></h4>
+            <a class="project-list-header-img" href="https://github.com/omakk/minilang">
+              <img src="imgs/GitHub-Mark-32px.png" alt="Github">
             </a>
-            <a class="logo-img" href="mailto:omakkila@gmail.com">
-              <span class="glyphicon glyphicon-envelope"></span>
+        </div>
+          <p>Compiler for a small, simple language that targets C developed using lex and yacc</p>
+          <p>Currently in the process of replacing backend with LLVM backend</p>
+        </li>
+        <li class="content-list-item">
+          <div class="project-list-header">
+            <h4 class="project-list-header-text"><strong>omakk.github.io</strong></h4>
+            <a class="project-list-header-img" href="https://github.com/omakk/omakk.github.io">
+              <img src="imgs/GitHub-Mark-32px.png" alt="Github">
+            </a>
+        </div>
+          <p>Source for this site</p>
+        </li>
+        <li class="content-list-item">
+          <div class="project-list-header">
+            <h4 class="project-list-header-text"><strong>Defense of Towers: Aegis</strong></h4>
+            <a class="project-list-header-img" href="https://github.com/omakk/DoTA">
+              <img src="imgs/GitHub-Mark-32px.png" alt="Github">
             </a>
           </div>
-        </div>
-        <div class= "animate one" id="resume" style="display: none;">
-          <p class="text-center"><a href="assets/CV_OMAR_2017.pdf"><u>View PDF version</u></a></p>
-          <h2 class="text-center"><u>EDUCATION</u></h2>
-          <p class="text-center"><strong>McGill University, Montréal, QC, Canada</strong></p>
-          <p class="text-center"><i>September 2011 - May 2017</i></p>
-          <p class="text-center">Bachelor of Software Engineering</p>
-          <h2 class="text-center" id="skills"><u>TECHNICAL SKILLS</u></h2>
-          <div class="row">
-            <div class=" col-md-12 col-sm-12 col-xs-12 text-center">
-              <!-- Section: LANGS -->
-              <h3>PROGRAMMING LANGUAGES</h3>
-              <ul class="list-unstyled list-inline content-list">
-                <li class="content-list-item">Java</li>
-                <li class="content-list-item">Python</li>
-                <li class="content-list-item">C</li>
-                <li class="content-list-item">Javascript</li>
-                <li class="content-list-item">OCaml</li>
-                <li class="content-list-item">Bash</li>
-              </ul>
-              <!-- End Section -->
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-              <!-- Section: FRMTOOLS -->
-              <h3 class="text-center">FRAMEWORKS AND TOOLS</h3>
-              <ul class="list-unstyled list-inline content-list">
-                <li class="content-list-item">Git</li>
-                <li class="content-list-item">Unix/Linux</li>
-                <li class="content-list-item">HTML</li>
-                <li class="content-list-item">CSS</li>
-                <li class="content-list-item">jQuery</li>
-                <li class="content-list-item">Boostrap</li>
-                <li class="content-list-item">Django</li>
-                <li class="content-list-item">SQL</li>
-              </ul>
-              <!-- End Section -->
-            </div>
-          </div>
-          <h2 class="text-center"><u>PROJECTS</u></h2>
-          <a href='#' role="button" id="project-link">
-            <p class="text-center">Over here!</p>
-          </a>
-          <h2 class="text-center"><u>WORK EXPERIENCE</u></h2>
-          <ul class="text-center list-unstyled content-list">
-            <li class="content-list-item">
-              <h4><strong>Computer Science Undergraduate Society (CSUS) Help Desk Tutor</strong></h4>
-              <p><i>Sept 2016 - April 2017</i></p>
-              <p>Recipient of Tomlinson Engagement Award for Mentoring (TEAM) in recognition of services</p>
-              <p>Assisted students with coursework and delivered mock interviews for upper-year students</p>
-            </li>
-            <li class="content-list-item">
-              <h4><strong>Personal Tutor</strong></h4>
-              <p><i>Nov 2014 - April 2017</i></p>
-              <p>Tutored students one-on-one in the following subjects: MATH 141 (Calculus 2), COMP 202 (Foundations of Programming), COMP 206 (Introduction to Software Systems), and COMP 310 (Operating Systems)</p>
-            </li>
-          </ul>
-        </div>
-        <div class= "animate one" id="projects" style="display: none;">
-          <ul class="text-center list-unstyled content-list">
-            <li class="content-list-item">
-              <div class="project-list-header">
-                <h4 class="project-list-header-text"><strong>Soccer-Playing Autonomous Robot</strong></h4>
-                <a class="project-list-header-img" href="https://github.com/nabilchowdhury/SoccerBot">
-                  <img src="imgs/GitHub-Mark-32px.png" alt="Github">
-                </a>
-            </div>
-              <p><i>First place in design competition</i></p>
-              <p>Lead software designer; functional capablilities include localization, navigation, obstacle avoidance, odometry, ball-loading mechanism, and launching mechanism</p>
-              <p>Constructed with the Lego Mindstorms EV3 Controller with Lego-based sensors and pieces</p>
-              <p>Multithreaded Java program utilizing the LeJOS EV3 API</p>
-            </li>
-            <li class="content-list-item">
-              <div class="project-list-header">
-                <h4 class="project-list-header-text"><strong>Minilang Compiler</strong></h4>
-                <a class="project-list-header-img" href="https://github.com/omakk/minilang">
-                  <img src="imgs/GitHub-Mark-32px.png" alt="Github">
-                </a>
-            </div>
-              <p>Compiler for a small, simple language that targets C developed using lex and yacc</p>
-              <p>Currently in the process of replacing backend with LLVM backend</p>
-            </li>
-            <li class="content-list-item">
-              <div class="project-list-header">
-                <h4 class="project-list-header-text"><strong>omakk.github.io</strong></h4>
-                <a class="project-list-header-img" href="https://github.com/omakk/omakk.github.io">
-                  <img src="imgs/GitHub-Mark-32px.png" alt="Github">
-                </a>
-            </div>
-              <p>Source for this site</p>
-            </li>
-            <li class="content-list-item">
-              <div class="project-list-header">
-                <h4 class="project-list-header-text"><strong>Defense of Towers: Aegis</strong></h4>
-                <a class="project-list-header-img" href="https://github.com/omakk/DoTA">
-                  <img src="imgs/GitHub-Mark-32px.png" alt="Github">
-                </a>
-              </div>
-              <p>Video game developed with Unity game engine for class project</p></li>
-          </ul>
-        </div>
-        <div class= "animate one" id="blog" style="display: none;">
-          <p class="text-center">COMING SOON!</p>
-          <p class="text-center">À VENIR BIENTÔT!</p>
-        </div>
-      </div>
+          <p>Video game developed with Unity game engine for class project</p></li>
+      </ul>
     </div>
-    <script type="text/javascript">
-    $("#project-link").click(function (e) {
-      $("#resume").removeClass('active fadeIn fadeInUp').css('display', 'none');
-      $("#projects").addClass('active fadeInUp').css('display', 'block');
-    })
+    <div class= "animate one" id="blog" style="display: none;">
+      <ul class="text-center list-unstyled content-list">
+        {% for post in site.posts %}
+          <li class="post-item">
+            <div id="post-link">
+                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+            </div>
+            <div id="post-summary">
+              <p style="color:#777;"; >{{ post.summary }}</p>
+            </div>
+            <div id="post-date">
+              <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                {{ post.date | date: "%d %b %Y" }}
+              </info>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$("#project-link").click(function (e) {
+  $("#resume").removeClass('active fadeIn fadeInUp').css('display', 'none');
+  $("#projects").addClass('active fadeInUp').css('display', 'block');
+})
 
-    $(".nav-icon").click(function (e) {
-      var active_content = $(".active");
-      var active_content_id = active_content.attr('id');
+$(".nav-icon").click(function (e) {
+  var active_content = $(".active");
+  var active_content_id = active_content.attr('id');
 
-      // id will end with '-btn' and so we splice it out of the string
-      // so that it can be equivalent to the ids of the content divs
-      // removing the need for a switch-case statement.
-      var id = e.target.id.slice(0,-4);
+  // id will end with '-btn' and so we splice it out of the string
+  // so that it can be equivalent to the ids of the content divs
+  // removing the need for a switch-case statement.
+  var id = e.target.id.slice(0,-4);
 
-      if (active_content_id != id) {
-        var elm = $('#' + id);
-        active_content.removeClass('active fadeIn fadeInUp').css('display', 'none');
-        elm.addClass('active fadeInUp').css('display', 'block');
-      }
-    });
-    </script>
-  </body>
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-84061525-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-</html>
+  if (active_content_id != id) {
+    var elm = $('#' + id);
+    active_content.removeClass('active fadeIn fadeInUp').css('display', 'none');
+    elm.addClass('active fadeInUp').css('display', 'block');
+  }
+});
+</script>
