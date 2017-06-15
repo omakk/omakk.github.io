@@ -26,7 +26,10 @@ p, p > a, .content-list {
 
 p > span {float: right;}
 
-a {text-decoration: none !important;}
+a {
+  text-decoration: none !important;
+  color: black;
+}
 
 hr {
   display: block;
@@ -97,6 +100,14 @@ hr {
   margin: 20px 0px;
   width: 100%;
 }
+
+li.post-item:after {
+  content: '•';
+  display: block;
+  margin: 20px 0px;
+}
+
+li.post-item:last-child:after { content: none;}
 
 #post-date {
   color: #777;
