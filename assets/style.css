@@ -4,18 +4,9 @@ html {
   font-size: 68%;
 }
 
-body {
-  overflow: scroll;
-}
-
-h1, h2, h3 {
-  color: black;
-  font-family: 'Trochut', cursive;
-}
-
 h4, h5, h6 {
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p, p > a, .content-list {
@@ -23,8 +14,6 @@ p, p > a, .content-list {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
 }
-
-p > span {float: right;}
 
 a {
   text-decoration: none !important;
@@ -34,10 +23,17 @@ a {
 hr {
   display: block;
   height: 1px;
-  border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0 10%;
+}
+
+#name {
+  color: black;
+  font-family: 'Trochut', cursive;
+}
+
+#main-content {
+  padding: 5px 30px;
 }
 
 .img-circle {border-radius: 20%;}
@@ -47,23 +43,14 @@ hr {
   padding: 10px 20% 5px;
 }
 
-#pic {padding-top: 25px;}
-
-#skills {padding-bottom: 10px;}
+#pic { padding-top: 25px; }
 
 .content-list-item {
-  padding: 10px 60px;
+  padding: 5px 20px;
   width: inherit;
 }
 
 .content-list-item > p { color: #777; }
-
-.glyphicon-envelope {
-  color: black;
-  font-size: 27px;
-  top: 2px;
-}
-.glyphicon-envelope:hover, .glyphicon-envelope:focus, .glyphicon-envelope:active {color: #FA0C19;}
 
 .logo-row {text-align: center;}
 
@@ -73,17 +60,14 @@ hr {
   vertical-align: middle;
 }
 
-.logo-img > img {height: 28px;}
-
 .nav-item {color: black;}
 .nav-item:hover, .nav-item:focus, .nav-item:active, a:hover, a:focus, a:active {color: #FA0C19;}
 
-.project-list-header {padding-bottom: 5px;}
+.project-list-header { padding-bottom: 5px; }
 
 .project-list-header-text {
   bottom: 0;
   display: inline;
-  margin-bottom: 0;
   vertical-align: bottom;
 }
 
@@ -94,7 +78,7 @@ hr {
 
 .project-list-header-img > img {
   height: 20px;
-  vertical-align: baseline; !important;
+  vertical-align: baseline !important;
 }
 
 .black-text { color: black !important; }
@@ -126,3 +110,27 @@ li.post-item:last-child:after { content: none;}
 #post-summary {
   padding: 0px 75px;
 }
+
+.cv-item {
+  display: flex;
+  margin: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cv-item-lhs {
+  padding: 5px 55px;
+}
+
+.cv-item-rhs {
+  border-left-color: lightgray;
+  border-left-style: solid;
+  border-left-width: thin;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  line-height: inherit;
+}
+
+#pdf-link { margin-top: 30px; }
