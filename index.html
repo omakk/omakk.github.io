@@ -203,18 +203,13 @@ title: Home
   </div>
 </div>
 <script type="text/javascript">
-$("#project-link").click(function (e) {
-  $("#resume").removeClass('active fadeIn fadeInUp').css('display', 'none');
-  $("#projects").addClass('active fadeInUp').css('display', 'block');
-})
-
 $(".nav-item").click(function (e) {
+  // Get current active section id
   var active_content = $(".active");
   var active_content_id = active_content.attr('id');
 
-  // id will end with '-btn' and so we splice it out of the string
-  // so that it can be equivalent to the ids of the content divs
-  // removing the need for a switch-case statement.
+  // We splice all but the last 4 characters of the .nav-item id
+  // since every .nav-item ends with `-btn` giving us the section id
   var id = e.target.id.slice(0,-4);
 
   if (active_content_id != id) {
