@@ -102,6 +102,7 @@ li.post-item:last-child:after { content: none;}
 }
 
 #post-link {
+
   width: inherit;
 }
 

@@ -40,12 +40,10 @@ title: Home
   <hr/>
   <div id="main-content">
     <!-- Summary -->
-    <div class="text-center active animate fadeIn one" id="summary">
+    <div class="text-center animate one" id="summary" style="display: none;">
       <p>Bonjour! Hi!</p>
       <p>
-        I am a recent Software Engineering graduate currently working at Collabora as a Software Engineer Intern under the Multimedia
-        domain. My portfolio of projects has seen me develop a diverse set of programs ranging from robotics to web apps
-        to compilers! (Click the console icon to check some of them out)
+        I am a recent Software Engineering graduate currently working at Collabora as a Software Engineer with the Web & Apps domain. My portfolio of projects has seen me develop a diverse set of programs ranging from robotics to web apps to compilers! (Click the console icon to check some of them out)
       </p>
       <p>
         Some of my technical interests include programming languages, parallelism/concurrency, and systems programming. Finding ways
@@ -128,24 +126,36 @@ title: Home
                 <img src="assets/imgs/collabora.png" width="60" height="60" class="img-responsive center-block" alt="Collabora Logo" />
               </a>
               <h5>
+                <strong>Software Engineer - Web & Apps Domain - Collabora</strong>
+              </h5>
+              <p class="black-text">
+                <i>May 2018 - Present</i>
+              </p>
+            </li>
+            <li class="content-list-item">
+              <a href="https://collabora.com" target="_blank" title="Collabora Website">
+                <img src="assets/imgs/collabora.png" width="60" height="60" class="img-responsive center-block" alt="Collabora Logo" />
+              </a>
+              <h5>
                 <strong>Software Engineer Intern - Multimedia Domain - Collabora</strong>
               </h5>
               <p class="black-text">
-                <i>Jan 2018 - Present</i>
+                <i>Jan 2018 - May 2018</i>
               </p>
-              <li class="content-list-item">
-                <a href="https://mcgill-csus.ca" target="_blank" title="McGill CSUS Website">
-                  <img src="assets/imgs/csus.png" width="50" height="50" class="img-responsive center-block" alt="CSUS Logo" />
-                </a>
-                <h5>
-                  <strong>Computer Science Undergraduate Society (CSUS) Help Desk Tutor</strong>
-                </h5>
-                <p class="black-text">
-                  <i>Sept 2016 - Apr 2017</i>
-                </p>
-                <p>Recipient of Tomlinson Engagement Award for Mentoring (TEAM) in recognition of services</p>
-                <p>Assisted students with coursework and delivered mock interviews for upper-year students</p>
-              </li>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mcgill-csus.ca" target="_blank" title="McGill CSUS Website">
+                <img src="assets/imgs/csus.png" width="50" height="50" class="img-responsive center-block" alt="CSUS Logo" />
+              </a>
+              <h5>
+                <strong>Computer Science Undergraduate Society (CSUS) Help Desk Tutor</strong>
+              </h5>
+              <p class="black-text">
+                <i>Sept 2016 - Apr 2017</i>
+              </p>
+              <p>Recipient of Tomlinson Engagement Award for Mentoring (TEAM) in recognition of services</p>
+              <p>Assisted students with coursework and delivered mock interviews for upper-year students</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -204,14 +214,13 @@ title: Home
       </ul>
     </div>
     <!-- Blog -->
-    <div class="animate one" id="blog" style="display: none;">
+    <div class="active animate fadeIn one" id="blog">
       <ul class="text-center list-unstyled content-list">
-        <p>Coming Soon!</p>
-        <p>Affaire à suivre!</p>
+        <h4 style="font-weight: bold;"> « 2018 » </h4>
         {% for post in site.posts %}
         <li class="post-item">
           <div id="post-link">
-            <h4>
+            <h4 style="color:#777;" >
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h4>
           </div>
