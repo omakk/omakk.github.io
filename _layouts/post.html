@@ -16,6 +16,7 @@
       <header>
         <h1>{{ page.title | default: site.github.repository_name }}</h1>
         <p><i>{{ page.summary }}</i></p>
+        <p style="font-weight: bold;">{{ site.description }}</p>
       </header>
       <section>
 
@@ -23,7 +24,6 @@
 
       </section>
       <footer>
-        <p>{{ site.description }}</p>
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
