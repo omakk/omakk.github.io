@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Four Open Months at Collabora"
-summary: "An overview of my internship experience at Collabora"
+summary: "An overview of my internship experience"
 ---
-
-# Four Open Months at Collabora
 
 At the start of 2018 in January, I joined Collabora, an open source software consultancy, as a Software Engineer Intern with the Multimedia team. Reaching the end of that internship, I would like to take the time to share my experience.
 

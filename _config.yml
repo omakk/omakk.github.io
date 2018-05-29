@@ -16,7 +16,7 @@
 title: Omar Akkila
 email: omakkila@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Omar Akkila's personal blog
+  Omar Akkila's Personal /dev/null
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://omakk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  omakk
@@ -24,7 +24,7 @@ author: Omar Akkila
 
 # Build settings
 markdown: kramdown
-theme: jekyll-athena
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
 exclude:
