@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GStreamer CI Support for Embedded Devices"
-summary: "A look at introducing an Raspberry Pi to GStreamer's CI system"
+summary: "A look at introducing a Raspberry Pi to GStreamer's CI system"
 ---
 
 GStreamer is a popular open-source pipeline-based multimedia framework that has been in development since 2001. That’s 17 years of constant development, triaging, bug fixes, feature additions, packaging, and testing. Adopting a [Jenkins-based Continuous Integration (CI)](https://ci.gstreamer.net/) setup in August 2013, GStreamer and its dependencies are now built multiple times a day with each commit. Prior to that, the multimedia project used a build bot hosted by Collabora and Igalia. At the time of this writing, GStreamer is built for the Linux (Fedora & Debian), macOS, Windows, Android, and iOS platforms. A very popular deployment target for GStreamer are embedded devices, but they are not targeted in the current CI setup.This meant additional manpower, effort, and testing outside of the automated tests for every release of GStreamer to validate on embedded boards. To rectify this, a goal was devised to integrate embedded devices into the CI. 
