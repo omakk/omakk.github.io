@@ -15,23 +15,23 @@ title: Home
 <div class="row" id="navbar">
   <ul class="text-center list-unstyled list-inline">
     <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInLeft one">
-      <a href="#" class="nav-item" title="Greeting Summary">
-        <i class="fa fa-hand-peace-o" id="summary-btn"></i>
+      <a href="#" class="nav-item" onclick="navItemOnClick(this)" id="summary-btn" title="Greeting Summary">
+        <i class="fa fa-hand-peace-o"></i>
       </a>
     </li>
     <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-      <a href="#" class="nav-item" title="Résumé">
-        <i class="fa fa-user" id="resume-btn"></i>
+      <a href="#" class="nav-item" onclick="navItemOnClick(this)" id="resume-btn" title="Résumé">
+        <i class="fa fa-user"></i>
       </a>
     </li>
     <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInUp one">
-      <a href="#" class="nav-item" title="Projects">
-        <i class="fa fa-terminal" id="projects-btn"></i>
+      <a href="#" class="nav-item" onclick="navItemOnClick(this)" id="projects-btn" title="Projects">
+        <i class="fa fa-terminal"></i>
       </a>
     </li>
     <li class="col-lg-3 col-md-3 col-s-3 col-xs-3 animate fadeInRight one">
-      <a href="#" class="nav-item" title="Blog">
-        <i class="fa fa-pencil" id="blog-btn"></i>
+      <a href="#" class="nav-item" onclick="navItemOnClick(this)" id="blog-btn" title="Blog">
+        <i class="fa fa-pencil"></i>
       </a>
     </li>
   </ul>
@@ -242,19 +242,20 @@ title: Home
   </div>
 </div>
 <script type="text/javascript">
-  $(".nav-item").click(function (e) {
-    // Get current active section id
-    var active_content = $(".active");
-    var active_content_id = active_content.attr('id');
+  var navItemOnClick = item => {
+    // Get current active section id. There should only be one.
+    let activeContent= document.getElementsByClassName('active')[0];
 
-    // We splice all but the last 4 characters of the .nav-item id
-    // since every .nav-item ends with `-btn` giving us the section id
-    var id = e.target.id.slice(0, -4);
+    // The element that launches the onClick event will have an id of
+    // `<section>-btn` so slice off the last 4 characters
+    let section = document.getElementById(item.id.slice(0, -4));
 
-    if (active_content_id != id) {
-      var elm = $('#' + id);
-      active_content.removeClass('active fadeIn fadeInUp').css('display', 'none');
-      elm.addClass('active fadeInUp').css('display', 'block');
+    if (activeContent.id != section.id) {
+      activeContent.classList.remove('active', 'fadeIn', 'fadeInUp');
+      activeContent.style.display = 'none';
+
+      section.classList.add('active', 'fadeIn', 'fadeInUp');
+      section.style.display = 'block';
     }
-  });
+  }
 </script>
